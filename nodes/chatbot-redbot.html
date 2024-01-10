@@ -391,7 +391,7 @@
     return valid;
   };
   $.RedBot.validate.nlpModel = function(name) {
-    return typeof name === 'string' && (name === '' || name.match(/^[A-Za-z0-9-_]*$/));
+    return typeof name === 'string' && (name === '' || name.match(/^[A-Za-z0-9-_]*$/) !== null);
   };
   $.RedBot.validate.utterances = function(utterances) {
     if (utterances == null) {
